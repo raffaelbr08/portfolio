@@ -1,8 +1,9 @@
 // LOGO SITE TEXT
 h1{	
-	font-family:'PoiretOne-Regular';
-	font-weight: bold;
+	font-family: 'PoiretOne-Regular';
+	font-weight:bold;
 	color: #464646;
+	text-align:center;
 	text-transform: uppercase;
 	span{
 		color:#ed1c16;
@@ -36,12 +37,19 @@ nav {
 
 // HEADER 
 header {
-	background-color:#ed1c16;
+	background-image: url('../../assets/imgs/header-bg.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;		
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	text-align:center;
 	width:100%;
 	color:#fff;
-	padding:20px;
+	padding:30px;
+	.btn-viewall{
+		background-color:#ed1c16;
+		font-family: 'Amaranth', sans-serif!important;
+	}
+
 }
