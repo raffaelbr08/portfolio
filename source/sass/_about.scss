@@ -1,12 +1,8 @@
 #about{
-	text-align:center;
-	background-color:#e74c3c;
-	padding:30px;
+	@include padraoSections(30px,#e74c3c,white);	
 	.about-title{
+			@include titlesSections();
 			color:white;
-			margin-bottom:40px;
-			border-bottom:2px solid #d4d4d4;
-			display:inline-block;
 		}
 	.about{		
 		display:flex;
@@ -18,9 +14,7 @@
 			.img-profile{
 				@extend .img-fluid;			
 				max-width:300px;
-				-webkit-box-shadow: 3px 6px 32px -9px rgba(0,0,0,0.57);
-				-moz-box-shadow: 3px 6px 32px -9px rgba(0,0,0,0.57);
-				box-shadow: 3px 6px 32px -9px rgba(0,0,0,0.57);			
+				@include box-shadow();							
 				margin-bottom:10px;
 				border-radius:2%;
 			}
@@ -37,7 +31,8 @@
 				}
 				.img-skill{	
 					width:70px;				
-					margin-bottom:20px;				
+					margin-bottom:20px;	
+					@include box-shadow();			
 				}
 			}
 		}

@@ -5,6 +5,10 @@
 	<title>Rafael BR ¡ FRONT END</title>
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="assets/css/style.css">	
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/typeit.min.js"></script>
 
 	<!-- FONT -->
 	<link rel="stylesheet" href="fonts/styles.css">
@@ -20,22 +24,23 @@
 		</div>
 		<ul class="nav">			
 			<li><a href="#about">Sobre</a></li>
-			<li><a href="">Serviços</a></li>
-			<li><a href="">Portfolio</a></li>
+			<li><a href="#services">Serviços</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="">Blog</a></li>
-			<li><a href="">Contato</a></li>	
+			<li><a href="#contact">Contato</a></li>	
 		</ul>	
 	</nav>
 
 	<header>
 
-		<h2 class="title-header">Precisando de um site?</h2>
-		<p>Clique no botao abaixo para entrar em contato</p>
+		<h2 class="title-header">Hi, I'm Rafael Brussolo.</h2>
+		<p class="title-header-sub">Clique no botao abaixo para entrar em contato</p>
 		<button class="btn btn-danger btn-viewall"><a href="#contato">ver mais</a></button>
 
 	</header>	
 
 	<section id="about">
+
 		<h2 class="about-title">Sobre mim</h2>
 		<div class="about">
 			<div class="about-img">
@@ -53,12 +58,12 @@
 				<hr>
 				<div class="about-skills">
 					<h4 class="title-skills">Skills</h4>
-					<img src="assets/imgs/html.png" class="img-skill">
-					<img src="assets/imgs/js.png" alt="" class="img-skill">
-					<img src="assets/imgs/css.png" alt="" class="img-skill">
-					<img src="assets/imgs/bootstrap.png" alt="" class="img-skill">
-					<img src="assets/imgs/git.png" alt="" class="img-skill">
-					<img src="assets/imgs/sass.png" alt="" class="img-skill">
+					<img src="assets/imgs/html.png" class="img-skill wow fadeIn">
+					<img src="assets/imgs/js.png" alt="" class="img-skill wow fadeIn">
+					<img src="assets/imgs/css.png" alt="" class="img-skill wow fadeIn">
+					<img src="assets/imgs/bootstrap.png" alt="" class="img-skill wow fadeIn">
+					<img src="assets/imgs/git.png" alt="" class="img-skill wow fadeIn">
+					<img src="assets/imgs/sass.png" alt="" class="img-skill wow fadeIn">
 				</div>			
 			</div>
 		</div>
@@ -68,50 +73,70 @@
 		<h2 class="services-title">Serviços</h2>
 		<div class="services">
 			<div class="service service-web">
-				<img src="assets/imgs/1485820567_Html.png" class="img-service">
+				<img src="assets/imgs/1485820567_Html.png" class="img-service wow fadeInDown" data-wow-duration="2s">
 				<h3>Front end</h3>
 				<p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
 			</div>
 			<div class="service service-desgn">
-				<img src="assets/imgs/1485820726_Design_Graphic.png" class="img-service">
+				<img src="assets/imgs/1485820726_Design_Graphic.png" class="img-service wow fadeInDown" data-wow-duration="2s">
 				<h3>Design</h3>
 				<p>Código legível, desenvolvido com as melhores práticas.</p>
 			</div>
 			<div class="service service-backend">
-				<img src="assets/imgs/backend.png" class="img-service">
-				<h3>CristianEnd</h3>
-				<p>Fingo que sei fazer</p>
+				<img src="assets/imgs/backend.png" class="img-service wow fadeInDown" data-wow-duration="2s">
+				<h3>BackEnd</h3>
+				<p>PHP - C# - JAVA</p>
 			</div>
 			<div class="service service-markting">
-				<img src="assets/imgs/1485820515_Adaptive_design.png" class="img-service">
+				<img src="assets/imgs/1485820515_Adaptive_design.png" class="img-service wow fadeInDown" data-wow-duration="2s">
 				<h3>Design Responsivo</h3>
 				<p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
 			</div>
 		</div>			
 	</section>
-
-	<section id="services">	
-		<h2 class="services-title">Serviços</h2>
-		<div class="services">
-			<div class="service service-web">
-
-			<h3>FrontEnd</h3>
-			<p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
-			</div>
-			<div class="service service-desgn">
-				<h3>Design</h3>
-				<p>Código legível, desenvolvido com as melhores práticas.</p>
-			</div>
-			<div class="service service-backend">
-				<h3>CristianEnd</h3>
-			<p>Fingo que sei fazer</p>
-			</div>
-			<div class="service service-markting">
-				<h3>Serviços gerais</h3>
-			<p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
-			</div>
+	
+	<section id="portfolio">	
+		<h2 class="portfolio-title">Portfolio</h2>
+		<div class="portfolio">
+			<img src="assets/imgs/portfolio-1.jpg" alt="" class="img-portfolio">
+			<img src="assets/imgs/portfolio-2.jpeg" alt="" class="img-portfolio">
+			<img src="assets/imgs/portfolio-3.jpeg" alt="" class="img-portfolio">
+			<img src="assets/imgs/portfolio-4.jpg" alt="" class="img-portfolio">
+			<img src="assets/imgs/portfolio-5.jpeg" alt="" class="img-portfolio">
+			<img src="assets/imgs/portfolio-6.jpeg" alt="" class="img-portfolio">
 		</div>			
 	</section>
+
+	<section id="contact">
+		<h2 class="contact-title">Contato</h2>
+		<p>Entre em contato conosco.</p>
+		<div class="contact">
+			<div class="contact-tel">
+				<img src="assets/imgs/fone.png" alt="">
+				<p><a href="tel:xx55555555">(xx) 5555 5555</a></p>
+			</div>
+			<div class="contact-email">
+				<img src="assets/imgs/contato.png" alt="">
+				<p><a href="mailto:email@contato.com">email@contato.com</a></p>
+			</div>
+		</div>		
+	</section>
+
+	<footer>
+		<p>Desenvolvido por: Rafael Brussolo e Edson Luiz</p>
+	</footer>
+	
+<script>
+  new WOW().init();
+  $('.title-header').typeIt({
+	  typeSpeed: 100
+  });
+
+   $('.title-header-sub').typeIt({
+	  typeSpeed: 50,
+	   startDelay: 3000
+  });
+</script>
 
 </body>
 </html>

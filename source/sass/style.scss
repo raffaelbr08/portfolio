@@ -1,8 +1,11 @@
 @import "../componentes/bootstrap/scss/bootstrap.scss";
+@import"mixin";
 
 @import "header";
 @import "about";
 @import "services";
+@import"portfolio";
+@import"contact";
 
 body{
 font-family: 'Amaranth', sans-serif!important;
