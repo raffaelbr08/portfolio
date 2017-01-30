@@ -527,7 +527,7 @@ dl.row > dd + dt {
   clear: left; }
 
 .img-fluid, .carousel-inner > .carousel-item > img,
-.carousel-inner > .carousel-item > a > img, #about .about-img .img-profile {
+.carousel-inner > .carousel-item > a > img, #about .about .about-img .img-profile {
   max-width: 100%;
   height: auto; }
 
@@ -4900,14 +4900,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-h1 {
-  font-family: 'PoiretOne-Regular';
-  font-weight: bold;
+h1.logo-text {
+  font-weight: 700;
   color: #464646;
-  text-align: center;
-  text-transform: uppercase; }
-  h1 span {
-    color: #ed1c16; }
+  text-align: center; }
+  h1.logo-text span {
+    color: #ed1c16;
+    font-family: "Amaranth", sans-serif !important; }
+
+.logo-text-sub {
+  text-align: center; }
 
 nav {
   display: flex;
@@ -4929,7 +4931,11 @@ nav {
         padding: 5px 0px;
         text-transform: uppercase;
         font-size: 18px;
+        font-family: "Amaranth", sans-serif !important;
         color: #d4d4d4; }
+        nav ul li a:hover {
+          color: #e74c3c;
+          text-decoration: none; }
 
 header {
   background-image: url("../../assets/imgs/header-bg.jpg");
@@ -4944,7 +4950,10 @@ header {
   padding: 30px; }
   header .btn-viewall {
     background-color: #ed1c16;
-    font-family: "Amaranth", sans-serif !important; }
+    border-radius: 0px; }
+    header .btn-viewall a {
+      text-decoration: none;
+      color: white; }
 
 @media (min-width: 760px) {
   nav {
@@ -4960,44 +4969,76 @@ header {
     padding-top: 250px; } }
 
 #about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  color: white;
-  background-color: #e74c3c; }
+  text-align: center;
+  background-color: #e74c3c;
+  padding: 30px; }
   #about .about-title {
-    color: white; }
-  #about .about-img .img-profile {
-    width: 300px;
-    border-radius: 100%;
-    margin: 10px 0; }
-  #about .about-img .social {
-    text-align: center; }
-    #about .about-img .social a {
-      color: white;
-      margin-left: 5px; }
-  #about .about-description .about-skills .title-skills {
     color: white;
-    margin: 20px 0;
-    text-shadow: #030303 4px 4px 4px; }
-  #about .about-description .about-skills .img-skill {
-    width: 50px;
-    margin-bottom: 10px; }
+    margin-bottom: 40px;
+    border-bottom: 2px solid #d4d4d4;
+    display: inline-block; }
+  #about .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: white; }
+    #about .about .about-img .img-profile {
+      max-width: 300px;
+      -webkit-box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
+      -moz-box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
+      box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
+      margin-bottom: 10px;
+      border-radius: 2%; }
+    #about .about .about-img .social {
+      text-align: center; }
+      #about .about .about-img .social a {
+        color: white;
+        margin-left: 5px; }
+    #about .about .about-description .about-skills .title-skills {
+      color: white;
+      margin: 20px 0; }
+    #about .about .about-description .about-skills .img-skill {
+      width: 70px;
+      margin-bottom: 20px; }
 
 @media (min-width: 760px) {
-  #about {
-    flex-direction: row;
-    justify-content: center; }
-    #about .about-description {
-      width: 650px;
+  .about {
+    flex-direction: row !important;
+    justify-content: center;
+    max-width: 970px;
+    margin: 0 auto; }
+    .about .about-description {
       margin-left: 150px; } }
 
 #services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px; }
+  text-align: center;
+  padding: 30px;
+  color: #464646; }
+  #services .services-title {
+    border-bottom: 3px solid #d4d4d4;
+    display: inline-block;
+    margin-bottom: 40px; }
+  #services .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    #services .services .img-service {
+      max-width: 128px;
+      margin-bottom: 10px; }
+
+@media (min-width: 760px) {
+  .services {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto; }
+    .services .service {
+      flex-grow: 1;
+      flex-basis: 150px;
+      padding: 0 10px; } }
 
 body {
   font-family: "Amaranth", sans-serif !important;

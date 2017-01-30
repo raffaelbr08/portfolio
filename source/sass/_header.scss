@@ -1,13 +1,16 @@
 // LOGO SITE TEXT
-h1{	
-	font-family: 'PoiretOne-Regular';
-	font-weight:bold;
+h1.logo-text{	
+
+	font-weight:700;
 	color: #464646;
-	text-align:center;
-	text-transform: uppercase;
+	text-align:center;	
 	span{
 		color:#ed1c16;
+		font-family: 'Amaranth', sans-serif!important;
 	}
+}
+.logo-text-sub{
+	text-align:center;
 }
 // NAV MOBILE
 nav {
@@ -30,7 +33,12 @@ nav {
 				padding:5px 0px;
 				text-transform: uppercase;
 				font-size:18px;
+				font-family: 'Amaranth', sans-serif!important;
 				color:#d4d4d4;
+				&:hover{
+					color:#e74c3c;
+					text-decoration:none;
+				}
 			}
 		}
 	}	
@@ -50,7 +58,11 @@ header {
 	padding:30px;
 	.btn-viewall{
 		background-color:#ed1c16;
-		font-family: 'Amaranth', sans-serif!important;
+		border-radius:0px;
+		a {
+			text-decoration:none;
+			color:white;
+		}
 	}
 
 }
