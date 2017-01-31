@@ -4962,7 +4962,9 @@ header {
 @media (min-width: 760px) {
   nav {
     flex-direction: row;
-    justify-content: center; }
+    justify-content: center;
+    position: fixed;
+    width: 100%; }
     nav .brand {
       margin-right: 60px; }
     nav ul {
@@ -4994,7 +4996,7 @@ header {
       -moz-box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
       box-shadow: 3px 6px 32px -9px rgba(0, 0, 0, 0.57);
       margin-bottom: 10px;
-      border-radius: 2%; }
+      border-radius: 1%; }
     #about .about .about-img .social {
       text-align: center; }
       #about .about .about-img .social a {
