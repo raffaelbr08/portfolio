@@ -58,15 +58,24 @@ header {
 	color:#fff;
 	padding:10px;
 	.title-header{
-		font-size:40px;
+		font-size:60px;
 	}
-	.btn-viewall{
-		background-color:red;
-		border-radius:0px;
-		a {
-			text-decoration:none;
+	.title-header-sub{
+		font-size:23px;
+	}
+	.title-header-sub2{
+		font-size:25px;
+		font-weight:bold;
+		background-color:red;		
+		width:200px;
+	}
+	#contato{
+		a{		
 			color:white;
-		}
+			&:hover{
+				color:red;
+			}
+		}				
 	}
 
 }
@@ -87,8 +96,13 @@ header {
 	}
 
 	header{
-		min-height:650px;
+		min-height:740px;
 		padding-top:250px;
-
+		.title-header-sub2{
+		font-size:28px;
+		font-weight:bold;
+		background-color:red;		
+		width:400px;
+	}
 	}
 }

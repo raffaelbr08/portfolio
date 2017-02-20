@@ -11,8 +11,7 @@
 		align-items:center;
 		
 		.img-portfolio{
-			@extend .img-fluid;
-			
+			@extend .img-fluid;			
 		}
 	}
 }
@@ -21,7 +20,7 @@
 	.portfolio{
 		flex-direction:row!important;
 		flex-wrap:wrap;
-		.img-portfolio{
+		.img-link{
 			width:33.3333%;
 		}
 	}
